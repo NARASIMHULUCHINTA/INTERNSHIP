@@ -1,0 +1,12 @@
+a = 256
+b = 256
+print(a is b)
+a = 257
+b = 257
+print(a is b)
+a = 10.0
+b = 10.0
+print(a is b)
+a = 10+20j
+b = 10+20j
+print(a is b)
