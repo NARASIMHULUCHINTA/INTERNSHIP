@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>
+            forms problem 
+        </title>
+        <link rel="stylesheet" href="form.css" type="text/css">
+        
+        <script>console.log('js loading')</script>
+    </head>
+    <body>
+        <form>
+            <h1 id="form-heading">Register</h1>
+            <div id="socialwrapper">
+                <img class="social-icon" src="google.png" alt="google" />
+                <img class="social-icon" src="facebook.png" alt="facebook" />
+                <img class="social-icon" src="github.png" alt="github" />
+                <img class="social-icon" src="linkedIn.png" alt="linkedIn" />
+            </div>
+            <div id="input-wrapper">
+                <div>
+                    <input class="input-box" type="text" name="username" placeholder="Username" disabled>
+                </div>
+                <div>
+                    <input class="input-box" type="email" name="Email" placeholder="Email" required>
+                </div>
+                <div>
+                    <input class="input-box" type="password" name="password" placeholder="Password">
+                </div>
+                <div>
+                    <input class="input-box" type="password" name="confirm-password" placeholder="confirm password">
+                </div>
+            </div>
+            <div>
+                <input type="submit" name="Register" id="submit-button" value="Register">
+            </div>
+        </form>
+        <script type="text/javascript" src="index.js"></script>
+    </body>
+</html>

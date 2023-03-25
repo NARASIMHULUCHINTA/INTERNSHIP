@@ -1,0 +1,28 @@
+/smooth
+/pen     /g--global 
+/pen    /i--insensitive
+
+...meta characters and character classes...
+
+/[ABC]irm
+/[ABC]
+/[A-Z]ame
+/[0-9]
+/[0-5]
+/[a-z][0-9]
+/[a-z][A-Z]
+/[\d] -- digits
+/[*0-9]
+/[\D] -- not digits
+/[\w]  /[\S]-- alphabets and numbers
+/[\W] /[\s] -- otherthan alphabets and numbers -- symbols
+
+---regex quantifiers ----
+
+/[\d]{3} -- quantity
+/[\d]{2,4] -- range of 2,3,4
+/[\d]{1,} or [\d]+ -- whole numbers
+/^#[a-zA-Z0-9]{6}$ or ^[\w]{6}$ -- hex code #33aa23 
+/^[a-zA-Z]{5}[0-9]{4}[a-zA-Z]$  -- aaass9999c
+/^[0-9]*[\S] -- 1000 100 110 11 1
+/https{0,1} or /http? -- http https
